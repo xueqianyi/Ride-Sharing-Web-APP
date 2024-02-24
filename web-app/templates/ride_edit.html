@@ -5,8 +5,8 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-{% include "navbar.html" %}
-
+{% include 'includes/_navbar.html' %}
+<div style="width: 100px; height: 80px;"></div>
 <div class="container my-4">
     <h2>Edit Ride</h2>
     <form action="{% url 'edit_ride' ride_id %}" method="post">
